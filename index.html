@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanskar Vidyarthi — Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Outfit:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<canvas id="starfield"></canvas>
+
+<!-- ── NAV ── -->
+<nav>
+  <a href="#hero" class="nav-logo">SV_</a>
+  <ul class="nav-links">
+    <li><a href="#about">about</a></li>
+    <li><a href="#journey">journey</a></li>
+    <li><a href="#skills">skills</a></li>
+    <li><a href="#projects">projects</a></li>
+    <li><a href="#certifications">certs</a></li>
+    <li><a href="#contact">contact</a></li>
+  </ul>
+</nav>
+
+<!-- ── HERO ── -->
+<section id="hero">
+  <div class="hero-text">
+    <div class="hero-tag">Open to Opportunities · May 2026</div>
+    <h1 class="hero-name">Sanskar<span>Vidyarthi</span></h1>
+    <p class="hero-subtitle">Software Engineer — Web Dev · Cloud · DevOps · AI/ML</p>
+    <p class="hero-uni">M.Eng. Software Engineering @ University of Maryland College Park</p>
+
+    <div class="hero-ctas">
+      <!--
+        RESUME SETUP:
+        Replace YOUR_FILE_ID_HERE with the file ID from your Google Drive share link:
+        https://drive.google.com/file/d/YOUR_FILE_ID_HERE/view
+      -->
+      <a href="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_HERE"
+         class="btn-primary" target="_blank" rel="noopener">
+        ↓ Download Résumé
+      </a>
+      <a href="https://linkedin.com/in/sanskar-vidyarthi" class="btn-ghost" target="_blank" rel="noopener">
+        LinkedIn ↗
+      </a>
+    </div>
+
+    <div class="hero-social">
+      <a href="https://github.com/SanskarLoganDev" target="_blank" rel="noopener" title="GitHub">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+      </a>
+      <a href="mailto:sanskar.vidyarthi102@gmail.com" title="Email">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-avatar">
+    <div class="avatar-ring">
+      <div class="avatar-inner">
+        <img src="asset/profile-pic/profile.jpg" alt="Sanskar Vidyarthi" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     ABOUT ME
+     ══════════════════════════════════════════════════════ -->
+<section id="about">
+  <div class="section-label">about</div>
+  <h2 class="section-title">About Me</h2>
+
+  <div class="about-body">
+    <p class="about-lead">
+      I'm a <strong>Software Engineer</strong> who loves building reliable systems that make a real difference — from securing enterprise codebases to shipping AI-powered applications.
+    </p>
+    <p class="about-para">
+      Currently completing my Master's in Software Engineering at the University of Maryland, College Park, I bring 2.5+ years of professional experience spanning backend API development, cloud infrastructure automation, and security engineering. At Accenture, I designed and shipped 20+ production REST APIs supporting 200+ enterprise clients, and at CBTS I built serverless vulnerability-detection pipelines that cut credential exposure by 60% across enterprise codebases.
+    </p>
+    <p class="about-para">
+      I'm passionate about cloud-native architectures, DevSecOps, and applying AI/ML to solve real-world problems. Whether it's provisioning EKS clusters with Terraform, building RAG pipelines with LLMs, or teaching 60+ graduate students about Computer Vision — I bring both depth and breadth to everything I work on.
+    </p>
+  </div>
+
+  <div class="about-cards">
+    <div class="about-card">
+      <div class="about-card-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+      </div>
+      <div class="about-card-content">
+        <div class="about-card-title">Education</div>
+        <div class="about-card-text">M.Eng. Software Engineering<br/>University of Maryland, College Park</div>
+      </div>
+    </div>
+    <div class="about-card">
+      <div class="about-card-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+      </div>
+      <div class="about-card-content">
+        <div class="about-card-title">Experience</div>
+        <div class="about-card-text">2.5+ Years Professional<br/>Cloud · Backend · DevSecOps</div>
+      </div>
+    </div>
+    <div class="about-card">
+      <div class="about-card-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      </div>
+      <div class="about-card-content">
+        <div class="about-card-title">Location</div>
+        <div class="about-card-text">College Park, Maryland<br/>United States</div>
+      </div>
+    </div>
+    <div class="about-card">
+      <div class="about-card-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+      </div>
+      <div class="about-card-content">
+        <div class="about-card-title">Availability</div>
+        <div class="about-card-text">Open to Full-Time Roles<br/>Starting May 2026</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     COMBINED JOURNEY: EXPERIENCE (LEFT) + EDUCATION (RIGHT)
+     ══════════════════════════════════════════════════════ -->
+<section id="journey">
+  <span id="experience" style="position:relative;top:-80px;"></span>
+  <span id="education"  style="position:relative;top:-80px;"></span>
+
+  <div class="section-label">journey</div>
+  <h2 class="section-title">Experience &amp; Education</h2>
+
+  <div class="dt-col-labels">
+    <div class="dt-col-label-work">// Work Experience</div>
+    <div></div>
+    <div class="dt-col-label-edu">// Education</div>
+  </div>
+
+  <div class="dual-timeline">
+
+    <!-- ══ ROW 1: TA Computer Vision  |  UMD M.Eng ══ -->
+    <div class="dt-row">
+      <div class="dt-left-cell">
+        <div class="dt-work-card">
+          <div class="dt-role">Teaching Assistant — Computer Vision</div>
+          <div class="dt-company">University of Maryland College Park · CMNS</div>
+          <div class="dt-meta">College Park, MD, USA · Sep 2025 – Present</div>
+          <ul class="dt-bullets">
+            <li>Instructing MSML640 Computer Vision — guiding 60+ graduate students through theoretical and hands-on coursework in image processing, deep learning architectures, and visual recognition pipelines.</li>
+            <li>Deliver timely, in-depth feedback on assignments and quizzes, upholding rigorous grading standards across varied assessment formats and ensuring academic integrity.</li>
+            <li class="extra">Facilitate weekly office hours focused on debugging student model implementations and demystifying complex topics such as CNNs, object detection, and spatial feature extraction.</li>
+            <li class="extra">Partner with faculty to refine lab exercises and coordinate review sessions, yielding measurable improvements in student performance and long-term concept retention.</li>
+          </ul>
+          <button class="dt-toggle">▼ show more</button>
+        </div>
+      </div>
+      <div class="dt-center-cell"><div class="dt-dot"></div></div>
+      <div class="dt-right-cell">
+        <div class="dt-edu-card">
+          <div class="dt-edu-inst">University of Maryland College Park</div>
+          <div class="dt-edu-degree">Master of Engineering, Software Engineering</div>
+          <div class="dt-edu-meta">College Park, MD, USA · Aug 2024 – May 2026 (Expected)</div>
+          <div class="dt-edu-gpa">3.76 <span>/ 4.0 GPA</span></div>
+          <div class="dt-courses-label">Relevant Coursework</div>
+          <div class="dt-courses">ENPM611 Software Engineering · ENPM612 Software Requirements · ENPM613 Software Design · ENPM614 Software Testing · ENPM818N Cloud Computing · ENPM655 AI Based Software Systems · ENPM696 Reverse Software Engineering · ENPM818P Linux System Administration · ENPM665 Cloud Security</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ ROW 2: CBTS Intern  |  (empty) ══ -->
+    <div class="dt-row">
+      <div class="dt-left-cell">
+        <div class="dt-work-card">
+          <div class="dt-role">Software Engineer Intern</div>
+          <div class="dt-company">CBTS (Cincinnati Bell Technology Solutions)</div>
+          <div class="dt-meta">Cincinnati, OH, USA · Jun 2025 – Aug 2025</div>
+          <ul class="dt-bullets">
+            <li>Automated vulnerability detection by integrating CVEDetails with <strong>AWS Lambda, EventBridge, and PostgreSQL</strong> to parse vendor CVEs every 3 hours — eliminating duplicate alerts and ensuring timely Office 365 email notifications.</li>
+            <li>Deployed a GitHub App-based secret scanner using <strong>Lambda, SQS, and Fargate</strong> to securely clone repos, execute Gitleaks scans, and block PR merges, reducing credential exposure incidents by <strong>60%</strong> across enterprise codebases.</li>
+            <li class="extra">Implemented an automated notification workflow with <strong>Office 365</strong>, instantly alerting developers of detected secrets while enforcing branch protection rules — improving security compliance by <strong>80%</strong> and cutting manual review effort significantly.</li>
+          </ul>
+          <button class="dt-toggle">▼ show more</button>
+          <div class="dt-tech">
+            <span class="tech-chip">Python</span><span class="tech-chip">AWS Lambda</span><span class="tech-chip">SQS</span><span class="tech-chip">Fargate</span><span class="tech-chip">EventBridge</span><span class="tech-chip">PostgreSQL</span><span class="tech-chip">Gitleaks</span><span class="tech-chip">Office 365</span>
+          </div>
+        </div>
+      </div>
+      <div class="dt-center-cell"><div class="dt-dot"></div></div>
+      <div class="dt-right-cell dt-empty"></div>
+    </div>
+
+    <!-- ══ ROW 3: TA MSML606  |  (empty) ══ -->
+    <div class="dt-row">
+      <div class="dt-left-cell">
+        <div class="dt-work-card">
+          <div class="dt-role">Teaching Assistant — Algorithms &amp; Data Structures for ML</div>
+          <div class="dt-company">University of Maryland College Park · CMNS</div>
+          <div class="dt-meta">College Park, MD, USA · Jan 2025 – May 2025</div>
+          <ul class="dt-bullets">
+            <li>Supported MSML606 Algorithms &amp; Data Structures for ML — helping 60+ graduate students navigate the mathematical and algorithmic foundations underlying modern machine learning systems.</li>
+            <li>Evaluated student work through comprehensive assignment and quiz grading, providing detailed written explanations that reinforced conceptual understanding and improved subsequent performance.</li>
+            <li class="extra">Held weekly office hours to address challenging algorithmic topics including dynamic programming, graph algorithms, and their direct applications in ML model design.</li>
+            <li class="extra">Collaborated with faculty to identify recurring student pain-points and adapt session materials, contributing to curriculum refinements that improved course flow and assessment clarity.</li>
+          </ul>
+          <button class="dt-toggle">▼ show more</button>
+        </div>
+      </div>
+      <div class="dt-center-cell"><div class="dt-dot"></div></div>
+      <div class="dt-right-cell dt-empty"></div>
+    </div>
+
+    <!-- ══ ROW 4: Accenture  |  (empty) ══ -->
+    <div class="dt-row">
+      <div class="dt-left-cell">
+        <div class="dt-work-card">
+          <div class="dt-role">Software Engineer</div>
+          <div class="dt-company">Accenture</div>
+          <div class="dt-meta">Pune, Maharashtra, India · Jul 2022 – Jun 2024</div>
+          <ul class="dt-bullets">
+            <li>Developed <strong>20+ RESTful APIs</strong> with Python, Flask, and Swagger, supporting seamless integration for 200+ enterprise clients and enhancing maintainability through rigorous Postman-based testing.</li>
+            <li>Automated GCP deployments with <strong>Terraform + Docker</strong>, resolved 100+ Artifact Registry issues, and decreased deployment time by <strong>~40%</strong> while stabilizing build and publish pipelines.</li>
+            <li class="extra">Designed <strong>20+ real-time entitlement dashboards</strong> in Looker with LookML, providing stakeholders with live visibility into client access metrics for SIEM/SOAR workflows.</li>
+            <li class="extra">Identified and fixed <strong>40+ critical API bugs</strong>; authored <strong>80+ PyTest unit test cases</strong> to ensure end-to-end reliability and stability of all created APIs.</li>
+            <li class="extra">Built Python solutions for <strong>BigQuery integrations, Cloud Scheduler jobs</strong>, and 10+ Cloud Monitoring alert policies to proactively monitor SIEM and SOAR metrics.</li>
+            <li class="extra">Authored <strong>50+ POC documents</strong> to accelerate cross-team knowledge transfer; enhanced sprint efficiency by <strong>20%</strong> through Agile ceremonies, 80+ user stories written, and 70+ user stories completed.</li>
+          </ul>
+          <button class="dt-toggle">▼ show more</button>
+          <div class="dt-tech">
+            <span class="tech-chip">Python/Flask</span><span class="tech-chip">Docker</span><span class="tech-chip">Terraform</span><span class="tech-chip">BigQuery</span><span class="tech-chip">Looker/LookML</span><span class="tech-chip">PostgreSQL</span><span class="tech-chip">PyTest</span><span class="tech-chip">GitHub Actions</span>
+          </div>
+        </div>
+      </div>
+      <div class="dt-center-cell"><div class="dt-dot"></div></div>
+      <div class="dt-right-cell dt-empty"></div>
+    </div>
+
+    <!-- ══ ROW 5: Cranfield Research  |  VIT B.Tech ══ -->
+    <div class="dt-row">
+      <div class="dt-left-cell">
+        <div class="dt-work-card">
+          <div class="dt-role">Research Analyst — Propulsion Engineering Centre</div>
+          <div class="dt-company">Cranfield University</div>
+          <div class="dt-meta">Cranfield, UK · Jan 2022 – May 2022</div>
+          <ul class="dt-bullets">
+            <li>Developed an engine performance data analytics system using <strong>MATLAB and Turbomatch</strong>, simulating diverse flight conditions to achieve <strong>95% accuracy</strong> in predicting key engine parameters for digital twin maintenance decisions.</li>
+            <li>Implemented scattered interpolation algorithms to process remote engine telemetry, cutting measurement error rates to <strong>&lt;1%</strong> (Case 1) and <strong>~3%</strong> (Case 2), ensuring reliable performance assessments across conditions.</li>
+          </ul>
+          <div class="dt-tech">
+            <span class="tech-chip">MATLAB</span><span class="tech-chip">Turbomatch</span><span class="tech-chip">Data Interpolation</span><span class="tech-chip">Digital Twin</span>
+          </div>
+        </div>
+      </div>
+      <div class="dt-center-cell"><div class="dt-dot"></div></div>
+      <div class="dt-right-cell">
+        <div class="dt-edu-card">
+          <div class="dt-edu-inst">Vellore Institute of Technology</div>
+          <div class="dt-edu-degree">B.Tech., Electronics &amp; Communication Engineering</div>
+          <div class="dt-edu-meta">Vellore, TN, India · Jul 2018 – May 2022</div>
+          <div class="dt-edu-gpa">9.07 <span>/ 10.0 GPA</span></div>
+          <div class="dt-courses-label">Relevant Coursework</div>
+          <div class="dt-courses">CSE1001 Problem Solving &amp; Programming in Python · PHY1999 Innovative Projects · ONL1023 Statistical Data Analysis · ECE3501 IoT Fundamentals · ECE3502 IoT Domain Analyst · MGT1022 Lean Start-up Management · STS3401 Foundation to Programming · ECE3999 Technical Solutions for Real World Problems · STS3205 Advanced Python Programming</div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /dual-timeline -->
+</section>
+
+<!-- ── SKILLS ── -->
+<section id="skills">
+  <div class="section-label">skills</div>
+  <h2 class="section-title">Tech Stack</h2>
+  <div class="skills-categories">
+    <div>
+      <div class="skill-group-label">// Languages</div>
+      <div class="skill-pills">
+        <span class="pill">Python</span><span class="pill">TypeScript</span><span class="pill">JavaScript</span><span class="pill">Java</span><span class="pill">C</span><span class="pill">C++</span><span class="pill">SQL</span><span class="pill">MATLAB</span>
+      </div>
+    </div>
+    <div>
+      <div class="skill-group-label">// Web &amp; Frameworks</div>
+      <div class="skill-pills">
+        <span class="pill">Flask</span><span class="pill">FastAPI</span><span class="pill">Node.js</span><span class="pill">React</span><span class="pill">Next.js 14</span><span class="pill">HTML5</span><span class="pill">CSS3</span>
+      </div>
+    </div>
+    <div>
+      <div class="skill-group-label">// Cloud &amp; DevOps</div>
+      <div class="skill-pills">
+        <span class="pill">AWS</span><span class="pill">Google Cloud</span><span class="pill">Azure</span><span class="pill">Lambda</span><span class="pill">EKS</span><span class="pill">DynamoDB</span><span class="pill">BigQuery</span><span class="pill">Docker</span><span class="pill">Kubernetes</span><span class="pill">Terraform</span><span class="pill">GitHub Actions</span><span class="pill">Helm</span>
+      </div>
+    </div>
+    <div>
+      <div class="skill-group-label">// Observability</div>
+      <div class="skill-pills">
+        <span class="pill">Prometheus</span><span class="pill">Grafana</span><span class="pill">OpenTelemetry</span><span class="pill">Jaeger</span><span class="pill">Looker</span>
+      </div>
+    </div>
+    <div>
+      <div class="skill-group-label">// Databases</div>
+      <div class="skill-pills">
+        <span class="pill">PostgreSQL</span><span class="pill">MySQL</span><span class="pill">SQLite</span><span class="pill">DynamoDB</span><span class="pill">ChromaDB</span>
+      </div>
+    </div>
+    <div>
+      <div class="skill-group-label">// AI / ML</div>
+      <div class="skill-pills">
+        <span class="pill">Claude API</span><span class="pill">RAG Pipelines</span><span class="pill">LLM Integration</span><span class="pill">Voyage AI</span><span class="pill">OpenCV</span><span class="pill">Scikit-learn</span><span class="pill">Pandas</span><span class="pill">NumPy</span>
+      </div>
+    </div>
+    <div>
+      <div class="skill-group-label">// Tools</div>
+      <div class="skill-pills">
+        <span class="pill">Git</span><span class="pill">Postman</span><span class="pill">Swagger</span><span class="pill">PyTest</span><span class="pill">Jira</span><span class="pill">Confluence</span><span class="pill">Linux</span><span class="pill">Wireshark</span><span class="pill">CMake</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROJECTS ── -->
+<section id="projects">
+  <div class="section-label">projects</div>
+  <h2 class="section-title">Featured Work</h2>
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <div><div class="project-award">🏆 Anthropic Hackathon — Student Choice Award</div></div>
+      <div>
+        <div class="project-title">FitnessHub</div>
+        <div class="project-year">2025</div>
+      </div>
+      <p class="project-desc">AI-powered fitness app generating personalized 7-day workout &amp; nutrition plans via Claude API. Engineered multi-parameter inputs, optimized system prompts for consistent JSON outputs, and adaptive age-based exercise programming.</p>
+      <div class="project-tech">
+        <span class="tech-chip">Python</span><span class="tech-chip">Flask</span><span class="tech-chip">Claude API</span><span class="tech-chip">HTML/CSS/JS</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div><div class="project-award">🥈 GDG Hackathon — 2nd Prize</div></div>
+      <div>
+        <div class="project-title">Job Hunter</div>
+        <div class="project-year">2025</div>
+      </div>
+      <p class="project-desc">Automated job watcher that scrapes company career pages, filters by keywords, and delivers HTML email digests. Prototyped serverless deployment on GCP Cloud Functions + Cloud Scheduler with Secret Manager for SMTP.</p>
+      <div class="project-tech">
+        <span class="tech-chip">FastAPI</span><span class="tech-chip">BeautifulSoup</span><span class="tech-chip">SQLite</span><span class="tech-chip">GCP</span><span class="tech-chip">Cloud Functions</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div>
+        <div class="project-title">EcoLens</div>
+        <div class="project-year">2026</div>
+      </div>
+      <p class="project-desc">AI environmental intelligence platform integrating Claude Vision + NASA GIBS satellite imagery to classify CO₂ emissions and benchmark against Paris Agreement targets. Dual-mode RAG pipeline with 70% API cost reduction via strategic caching.</p>
+      <div class="project-tech">
+        <span class="tech-chip">FastAPI</span><span class="tech-chip">Claude API</span><span class="tech-chip">NASA GIBS</span><span class="tech-chip">ChromaDB</span><span class="tech-chip">Voyage AI</span><span class="tech-chip">RAG</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div>
+        <div class="project-title">TEMS — Terrapin Events Platform</div>
+        <div class="project-year">2025</div>
+      </div>
+      <p class="project-desc">Serverless event management for 200+ university organizers supporting 1,000+ concurrent users. CQRS + single-table DynamoDB modeling, AppSync GraphQL, 99.5% uptime via multi-AZ, sub-2-second API response times.</p>
+      <div class="project-tech">
+        <span class="tech-chip">AWS Lambda</span><span class="tech-chip">DynamoDB</span><span class="tech-chip">AppSync</span><span class="tech-chip">Next.js 14</span><span class="tech-chip">TypeScript</span><span class="tech-chip">GraphQL</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div>
+        <div class="project-title">OpenTelemetry on AWS EKS</div>
+        <div class="project-year">2025</div>
+      </div>
+      <p class="project-desc">Reproducible observability stack — EKS provisioned with Terraform (VPC, private nodes), OpenTelemetry via Helm, Jaeger tracing, Grafana dashboards. GitHub Actions CI/CD with Helm rollback and Prometheus + Alertmanager → Slack alerts.</p>
+      <div class="project-tech">
+        <span class="tech-chip">EKS</span><span class="tech-chip">Terraform</span><span class="tech-chip">Helm</span><span class="tech-chip">OpenTelemetry</span><span class="tech-chip">Prometheus</span><span class="tech-chip">Grafana</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div>
+        <div class="project-title">NetScope — Packet Analyzer</div>
+        <div class="project-year">2025</div>
+      </div>
+      <p class="project-desc">C++/libpcap network packet analyzer decoding Ethernet/IPv4/TCP/UDP. Surfaces "top talkers &amp; flows" to pinpoint bandwidth hogs. DNS-based domain labeling and TCP handshake metrics (SYN→SYN/ACK RTT, fail rate) to reveal latency issues.</p>
+      <div class="project-tech">
+        <span class="tech-chip">C++</span><span class="tech-chip">libpcap</span><span class="tech-chip">CMake</span><span class="tech-chip">Wireshark</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div>
+        <div class="project-title">Driver Drowsiness Detection</div>
+        <div class="project-year">2021</div>
+      </div>
+      <p class="project-desc">Real-time drowsiness detection using Python, OpenCV, and dlib tracking eye aspect ratio and lip distance with 90%+ accuracy. Arduino + NodeMCU pulse sensor transmitting to ThingSpeak cloud, triggering alerts below 60 bpm.</p>
+      <div class="project-tech">
+        <span class="tech-chip">Python</span><span class="tech-chip">OpenCV</span><span class="tech-chip">dlib</span><span class="tech-chip">Arduino</span><span class="tech-chip">ThingSpeak</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── CERTIFICATIONS ── -->
+<section id="certifications">
+  <div class="section-label">certifications</div>
+  <h2 class="section-title">Cloud &amp; Networking Certs</h2>
+  <div class="cert-badges-grid">
+    <div class="cert-badge-card">
+      <img src="asset/cert-badges/professional-cloud-architect-certification.png" alt="GCP Professional Cloud Architect" />
+      <div class="cert-badge-name">GCP Professional Cloud Architect</div>
+    </div>
+    <div class="cert-badge-card">
+      <img src="asset/cert-badges/aws-certified-developer-associate.png" alt="AWS Certified Developer – Associate" />
+      <div class="cert-badge-name">AWS Certified Developer – Associate</div>
+    </div>
+    <div class="cert-badge-card">
+      <img src="asset/cert-badges/associate-cloud-engineer-certification.png" alt="GCP Associate Cloud Engineer" />
+      <div class="cert-badge-name">GCP Associate Cloud Engineer</div>
+    </div>
+    <div class="cert-badge-card">
+      <img src="asset/cert-badges/aws-certified-ai-practitioner.png" alt="AWS Certified AI Practitioner" />
+      <div class="cert-badge-name">AWS Certified AI Practitioner</div>
+    </div>
+    <div class="cert-badge-card">
+      <img src="asset/cert-badges/microsoft-certified-azure-fundamentals.png" alt="Azure Fundamentals AZ-900" />
+      <div class="cert-badge-name">Azure Fundamentals (AZ-900)</div>
+    </div>
+    <div class="cert-badge-card">
+      <img src="asset/cert-badges/cisco-certified-support-technician-networking-ccst-.1.png" alt="Cisco CCST Networking" />
+      <div class="cert-badge-name">Cisco CCST Networking</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact">
+  <div class="section-label">contact</div>
+  <h2 class="section-title">Let's Connect</h2>
+  <div class="contact-grid">
+    <a href="mailto:sanskar.vidyarthi102@gmail.com" class="contact-link">
+      <div class="contact-icon">✉️</div>
+      <div>
+        <div class="contact-label">// email</div>
+        <div class="contact-value">sanskar.vidyarthi102@gmail.com</div>
+      </div>
+    </a>
+    <a href="https://linkedin.com/in/sanskar-vidyarthi" target="_blank" rel="noopener" class="contact-link">
+      <div class="contact-icon">💼</div>
+      <div>
+        <div class="contact-label">// linkedin</div>
+        <div class="contact-value">sanskar-vidyarthi</div>
+      </div>
+    </a>
+    <a href="https://github.com/SanskarLoganDev" target="_blank" rel="noopener" class="contact-link">
+      <div class="contact-icon">🐙</div>
+      <div>
+        <div class="contact-label">// github</div>
+        <div class="contact-value">SanskarLoganDev</div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-name">SANSKAR VIDYARTHI</div>
+  <div class="footer-copy">© <span id="year"></span> Sanskar Vidyarthi. All rights reserved.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
