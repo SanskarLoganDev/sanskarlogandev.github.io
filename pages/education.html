@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Education — Sanskar Vidyarthi</title>
+  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="stylesheet" href="../css/experience.css" />
+  <style>
+    /* ── Education-only overrides ── */
+    .edu-standalone {
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
+      margin-bottom: 3.5rem;
+    }
+    .edu-standalone .dt-edu-card {
+      max-width: 750px;
+      width: 100%;
+    }
+
+    /* Certifications on this page too */
+    .cert-badges-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 1.75rem 1.5rem;
+      justify-items: center;
+    }
+    .cert-badge-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.65rem;
+    }
+    .cert-badge-card img {
+      width: 120px; height: 120px;
+      object-fit: contain;
+      filter: drop-shadow(0 0 10px rgba(0,210,255,0.12));
+      transition: transform 0.25s, filter 0.25s;
+    }
+    .cert-badge-card:hover img {
+      transform: translateY(-5px) scale(1.06);
+      filter: drop-shadow(0 0 20px rgba(0,210,255,0.32));
+    }
+    .cert-badge-name {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      color: var(--text-muted);
+      text-align: center;
+      line-height: 1.4;
+      max-width: 140px;
+    }
+    .certs-section { margin-top: 4rem; }
+  </style>
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav>
+  <a href="../index.html" class="nav-logo">SV_</a>
+  <ul class="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="education.html">Education</a></li>
+    <li><a href="projects.html">Projects</a></li>
+  </ul>
+  <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<nav class="nav-mobile" id="nav-mobile">
+  <a href="../index.html">Home</a>
+  <a href="experience.html">Experience</a>
+  <a href="education.html">Education</a>
+  <a href="projects.html">Projects</a>
+</nav>
+
+<!-- ── PAGE CONTENT ── -->
+<div class="page-content">
+
+  <!-- Degrees -->
+  <div class="section-label">academic background</div>
+  <h1 class="page-title">Education</h1>
+
+  <div class="edu-standalone">
+
+    <div class="dt-edu-card reveal">
+      <div class="dt-edu-inst">University of Maryland College Park</div>
+      <div class="dt-edu-degree">Master of Engineering, Software Engineering</div>
+      <div class="dt-edu-meta">College Park, MD, USA · Aug 2024 – May 2026 (Expected)</div>
+      <div class="dt-edu-gpa">3.76 <span>/ 4.0 GPA</span></div>
+      <div class="dt-courses-label">Relevant Coursework</div>
+      <div class="dt-courses">ENPM611 Software Engineering · ENPM612 Software Requirements · ENPM613 Software Design · ENPM614 Software Testing · ENPM818N Cloud Computing · ENPM655 AI Based Software Systems · ENPM696 Reverse Software Engineering · ENPM818P Linux System Administration · ENPM665 Cloud Security</div>
+    </div>
+
+    <div class="dt-edu-card reveal">
+      <div class="dt-edu-inst">Vellore Institute of Technology</div>
+      <div class="dt-edu-degree">B.Tech., Electronics &amp; Communication Engineering</div>
+      <div class="dt-edu-meta">Vellore, TN, India · Jul 2018 – May 2022</div>
+      <div class="dt-edu-gpa">9.07 <span>/ 10.0 GPA</span></div>
+      <div class="dt-courses-label">Relevant Coursework</div>
+      <div class="dt-courses">CSE1001 Problem Solving &amp; Programming in Python · PHY1999 Innovative Projects · ONL1023 Statistical Data Analysis · ECE3501 IoT Fundamentals · ECE3502 IoT Domain Analyst · MGT1022 Lean Start-up Management · STS3401 Foundation to Programming · ECE3999 Technical Solutions for Real World Problems · STS3205 Advanced Python Programming</div>
+    </div>
+
+  </div>
+
+  <!-- Certifications -->
+  <div class="certs-section">
+    <div class="section-label">certifications</div>
+    <h1 class="page-title">Cloud &amp; Networking Certs</h1>
+    <div class="cert-badges-grid">
+      <div class="cert-badge-card reveal">
+        <img src="../asset/cert-badges/professional-cloud-architect-certification.png" alt="GCP Professional Cloud Architect" />
+        <div class="cert-badge-name">GCP Professional Cloud Architect</div>
+      </div>
+      <div class="cert-badge-card reveal">
+        <img src="../asset/cert-badges/aws-certified-developer-associate.png" alt="AWS Certified Developer – Associate" />
+        <div class="cert-badge-name">AWS Certified Developer – Associate</div>
+      </div>
+      <div class="cert-badge-card reveal">
+        <img src="../asset/cert-badges/associate-cloud-engineer-certification.png" alt="GCP Associate Cloud Engineer" />
+        <div class="cert-badge-name">GCP Associate Cloud Engineer</div>
+      </div>
+      <div class="cert-badge-card reveal">
+        <img src="../asset/cert-badges/aws-certified-ai-practitioner.png" alt="AWS Certified AI Practitioner" />
+        <div class="cert-badge-name">AWS Certified AI Practitioner</div>
+      </div>
+      <div class="cert-badge-card reveal">
+        <img src="../asset/cert-badges/microsoft-certified-azure-fundamentals.png" alt="Azure Fundamentals AZ-900" />
+        <div class="cert-badge-name">Azure Fundamentals (AZ-900)</div>
+      </div>
+      <div class="cert-badge-card reveal">
+        <img src="../asset/cert-badges/cisco-certified-support-technician-networking-ccst-.1.png" alt="Cisco CCST Networking" />
+        <div class="cert-badge-name">Cisco CCST Networking</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-name">SANSKAR VIDYARTHI</div>
+  <div class="footer-copy">© <span id="year"></span> Sanskar Vidyarthi. All rights reserved.</div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

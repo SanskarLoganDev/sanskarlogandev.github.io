@@ -1,0 +1,224 @@
+/* ============================================================
+   EXPERIENCE PAGE STYLES
+   ============================================================ */
+
+/* ── DUAL TIMELINE ── */
+.dt-col-labels {
+  display: grid;
+  grid-template-columns: 1fr 56px 1fr;
+  margin-bottom: 1.25rem;
+}
+.dt-col-label-work,
+.dt-col-label-edu {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+.dt-col-label-work { text-align: right; padding-right: 1.5rem; }
+.dt-col-label-edu  { padding-left: 1.5rem; }
+
+.dual-timeline {
+  position: relative;
+}
+.dual-timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0; bottom: 0;
+  width: 1px;
+  transform: translateX(-50%);
+  background: linear-gradient(to bottom, var(--cyan) 0%, rgba(0,210,255,0.04) 100%);
+  z-index: 0;
+}
+
+.dt-row {
+  display: grid;
+  grid-template-columns: 1fr 56px 1fr;
+  align-items: flex-start;
+  margin-bottom: 2.25rem;
+}
+
+.dt-left-cell  { display: flex; justify-content: flex-end; padding-right: 1.75rem; }
+.dt-right-cell { display: flex; justify-content: flex-start; padding-left: 1.75rem; }
+
+.dt-center-cell {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.35rem;
+  position: relative;
+  z-index: 1;
+}
+.dt-dot {
+  width: 13px; height: 13px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 2px solid var(--cyan);
+  box-shadow: 0 0 10px rgba(0,210,255,0.5);
+}
+
+/* ── SHARED CARD BASE ── */
+.dt-work-card,
+.dt-edu-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.35rem 1.5rem;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.22s, background 0.22s;
+}
+.dt-work-card::before,
+.dt-edu-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.dt-work-card::before { background: linear-gradient(90deg, var(--cyan), var(--violet)); }
+.dt-edu-card::before  { background: linear-gradient(90deg, var(--violet), var(--cyan)); }
+.dt-work-card:hover::before,
+.dt-edu-card:hover::before { opacity: 1; }
+.dt-work-card:hover,
+.dt-edu-card:hover { border-color: var(--border-glow); background: var(--bg-card-hover); }
+
+/* Reveal animation */
+.dt-work-card, .dt-edu-card { opacity: 0; transform: translateY(18px); }
+.dt-work-card.visible, .dt-edu-card.visible { animation: revealUp 0.5s ease forwards; }
+
+/* ── WORK CARD INTERNALS ── */
+.dt-role {
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: 0.02em;
+  line-height: 1.3;
+  margin-bottom: 0.18rem;
+}
+.dt-company {
+  font-size: 0.8rem;
+  color: var(--cyan);
+  font-weight: 600;
+  margin-bottom: 0.12rem;
+}
+.dt-meta {
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  color: var(--text-muted);
+  margin-bottom: 0.85rem;
+  line-height: 1.5;
+}
+.dt-bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.dt-bullets li {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  padding-left: 1.05rem;
+  position: relative;
+  line-height: 1.55;
+}
+.dt-bullets li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--cyan);
+  font-size: 0.64rem;
+  top: 4px;
+}
+.dt-bullets li.extra { display: none; }
+.dt-bullets.expanded li.extra { display: list-item; }
+
+.dt-toggle {
+  margin-top: 0.7rem;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--cyan);
+  background: none;
+  border: 1px solid rgba(0,210,255,0.22);
+  border-radius: 100px;
+  padding: 0.22rem 0.7rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: background 0.2s, border-color 0.2s;
+}
+.dt-toggle:hover { background: var(--cyan-muted); border-color: var(--border-glow); }
+
+.dt-tech { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.85rem; }
+
+/* ── EDUCATION CARD INTERNALS ── */
+.dt-edu-inst {
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.3;
+  margin-bottom: 0.18rem;
+}
+.dt-edu-degree {
+  font-size: 0.78rem;
+  color: var(--cyan);
+  font-weight: 500;
+  margin-bottom: 0.12rem;
+}
+.dt-edu-meta {
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+.dt-edu-gpa {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 900;
+  color: var(--cyan);
+  margin-bottom: 0.7rem;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.25rem;
+}
+.dt-edu-gpa span {
+  font-size: 0.62rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+.dt-courses-label {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  color: var(--text-muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+}
+.dt-courses {
+  font-size: 0.73rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .dt-col-labels { display: none; }
+  .dual-timeline::before { left: 18px; transform: none; }
+  .dt-row {
+    grid-template-columns: 36px 1fr;
+    grid-template-rows: auto auto;
+    margin-bottom: 1.5rem;
+  }
+  .dt-center-cell { grid-column: 1; grid-row: 1; padding-top: 1.35rem; justify-content: center; }
+  .dt-left-cell   { grid-column: 2; grid-row: 1; padding: 0 0 0 1rem; justify-content: flex-start; }
+  .dt-right-cell  { grid-column: 2; grid-row: 2; padding: 0.75rem 0 0 1rem; justify-content: flex-start; }
+  .dt-right-cell.dt-empty { display: none; }
+}
