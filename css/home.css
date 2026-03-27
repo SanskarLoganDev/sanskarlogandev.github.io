@@ -220,104 +220,30 @@ h1.hero-name span {
   font-size: 1rem;
   font-weight: 700;
   color: var(--text-primary);
-  margin-bottom: 0.75rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-.skill-group-title::after {
-  content: '';
-  flex: 1;
-  height: 1px;
-  background: var(--border);
-  margin-left: 0.5rem;
+  margin-bottom: 0.85rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
 }
 
-.skill-pills {
+/* Badge images row */
+.skill-badges {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-}
-
-/* ── Emoji badge pill — coloured background per category ── */
-.pill {
-  display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  font-family: var(--font-body);
-  font-size: 0.8rem;
-  font-weight: 600;
-  padding: 0.32rem 0.85rem 0.32rem 0.6rem;
-  border-radius: 7px;
-  border: 1px solid transparent;
-  color: #fff;
-  cursor: default;
-  transition: transform 0.18s, filter 0.18s;
-  white-space: nowrap;
-  line-height: 1;
-}
-.pill:hover {
-  transform: translateY(-2px);
-  filter: brightness(1.18);
 }
 
-.pill-emoji {
-  font-size: 0.9rem;
-  line-height: 1;
+.skill-badges img {
+  height: 26px;
+  border-radius: 4px;
+  transition: transform 0.18s, opacity 0.18s;
+  opacity: 0.88;
 }
 
-/* Per-skill colour overrides — matching the vibe from the reference screenshot */
-/* Languages & Frameworks */
-.pill-python    { background: #3776ab; border-color: #4a8fc4; }
-.pill-js        { background: #c9b200; border-color: #e0c800; color: #000; }
-.pill-ts        { background: #007acc; border-color: #2a9bd4; }
-.pill-html      { background: #e34c26; border-color: #f05a30; }
-.pill-css       { background: #1572b6; border-color: #2a8fd0; }
-.pill-flask     { background: #2d2d2d; border-color: #555; }
-.pill-fastapi   { background: #059669; border-color: #10b981; }
-.pill-react     { background: #20232a; border-color: #61dafb; color: #61dafb; }
-.pill-nextjs    { background: #111; border-color: #444; }
-.pill-nodejs    { background: #3c873a; border-color: #52a150; }
-.pill-mysql     { background: #00618a; border-color: #1a7aab; }
-.pill-postgres  { background: #336791; border-color: #4a85b5; }
-
-/* Cloud & DevOps */
-.pill-aws       { background: #232f3e; border-color: #ff9900; }
-.pill-gcp       { background: #1a73e8; border-color: #4a93f5; }
-.pill-terraform { background: #5c4ee5; border-color: #7c6ef5; }
-.pill-docker    { background: #2496ed; border-color: #4ab0f5; }
-.pill-ghactions { background: #1a1a2e; border-color: #2088ff; color: #2088ff; }
-.pill-graphql   { background: #e10098; border-color: #f540b0; }
-.pill-yaml      { background: #444; border-color: #666; }
-.pill-cfn       { background: #232f3e; border-color: #ff9900; }
-.pill-tcp       { background: #1a5276; border-color: #2471a3; }
-
-/* AI/ML */
-.pill-claude    { background: #6b46c1; border-color: #8b5cf6; }
-.pill-genai     { background: #0ea5e9; border-color: #38bdf8; }
-.pill-chroma    { background: #ff6b35; border-color: #ff8c5a; }
-.pill-rag       { background: #0d9488; border-color: #14b8a6; }
-.pill-llm       { background: #7c3aed; border-color: #9d60fa; }
-.pill-pandas    { background: #150458; border-color: #2a0a7a; }
-.pill-opencv    { background: #5c3ee8; border-color: #7c5ef8; }
-.pill-prompt    { background: #047857; border-color: #059669; }
-.pill-numpy     { background: #013243; border-color: #1a5276; }
-.pill-matplotlib{ background: #11557c; border-color: #1a7aab; }
-
-/* Tools */
-.pill-git       { background: #f05032; border-color: #f57052; }
-.pill-postman   { background: #ef5b25; border-color: #f57040; }
-.pill-pytest    { background: #0a9edc; border-color: #1ab5f5; }
-.pill-jira      { background: #0052cc; border-color: #1a72ec; }
-.pill-swagger   { background: #49a832; border-color: #60cc45; }
-.pill-confluence{ background: #172b4d; border-color: #253f6e; }
-.pill-linux     { background: #333; border-color: #fcc624; color: #fcc624; }
-.pill-bash      { background: #1e2a1e; border-color: #2d5a27; }
-.pill-wireshark { background: #1679a7; border-color: #2899c7; }
-.pill-wsl       { background: #0078d4; border-color: #1a98f4; }
-.pill-claudecode{ background: #5c3aad; border-color: #7c5ad0; }
-.pill-cursor    { background: #111; border-color: #555; }
-.pill-vscode    { background: #007acc; border-color: #2a9bd4; }
+.skill-badges img:hover {
+  transform: translateY(-2px) scale(1.07);
+  opacity: 1;
+}
 
 /* ── CERTIFICATIONS ── */
 #certifications {

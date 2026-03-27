@@ -7,19 +7,15 @@
   <link rel="stylesheet" href="../css/global.css" />
   <link rel="stylesheet" href="../css/experience.css" />
   <style>
-    /* ── Education-only overrides ── */
     .edu-standalone {
       display: flex;
       flex-direction: column;
       gap: 1.75rem;
       margin-bottom: 3.5rem;
     }
-    .edu-standalone .dt-edu-card {
-      max-width: 750px;
-      width: 100%;
-    }
+    .edu-standalone .dt-edu-card { max-width: 780px; }
 
-    /* Certifications on this page too */
+    /* Certifications */
     .cert-badges-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -75,31 +71,51 @@
   <a href="projects.html">Projects</a>
 </nav>
 
-<!-- ── PAGE CONTENT ── -->
 <div class="page-content">
 
-  <!-- Degrees -->
   <div class="section-label">academic background</div>
   <h1 class="page-title">Education</h1>
 
   <div class="edu-standalone">
 
+    <!-- UMD -->
     <div class="dt-edu-card reveal">
       <div class="dt-edu-inst">University of Maryland College Park</div>
       <div class="dt-edu-degree">Master of Engineering, Software Engineering</div>
       <div class="dt-edu-meta">College Park, MD, USA · Aug 2024 – May 2026 (Expected)</div>
       <div class="dt-edu-gpa">3.76 <span>/ 4.0 GPA</span></div>
       <div class="dt-courses-label">Relevant Coursework</div>
-      <div class="dt-courses">ENPM611 Software Engineering · ENPM612 Software Requirements · ENPM613 Software Design · ENPM614 Software Testing · ENPM818N Cloud Computing · ENPM655 AI Based Software Systems · ENPM696 Reverse Software Engineering · ENPM818P Linux System Administration · ENPM665 Cloud Security</div>
+      <ul class="dt-courses-list">
+        <li>ENPM611 — Software Engineering</li>
+        <li>ENPM612 — Software Requirements</li>
+        <li>ENPM613 — Software Design &amp; Architecture</li>
+        <li>ENPM614 — Software Testing &amp; Maintenance</li>
+        <li>ENPM818N — Cloud Computing</li>
+        <li>ENPM655 — AI Based Software Systems</li>
+        <li>ENPM696 — Reverse Software Engineering</li>
+        <li>ENPM818P — Linux System Administration</li>
+        <li>ENPM665 — Cloud Security</li>
+      </ul>
     </div>
 
+    <!-- VIT -->
     <div class="dt-edu-card reveal">
       <div class="dt-edu-inst">Vellore Institute of Technology</div>
       <div class="dt-edu-degree">B.Tech., Electronics &amp; Communication Engineering</div>
       <div class="dt-edu-meta">Vellore, TN, India · Jul 2018 – May 2022</div>
       <div class="dt-edu-gpa">9.07 <span>/ 10.0 GPA</span></div>
       <div class="dt-courses-label">Relevant Coursework</div>
-      <div class="dt-courses">CSE1001 Problem Solving &amp; Programming in Python · PHY1999 Innovative Projects · ONL1023 Statistical Data Analysis · ECE3501 IoT Fundamentals · ECE3502 IoT Domain Analyst · MGT1022 Lean Start-up Management · STS3401 Foundation to Programming · ECE3999 Technical Solutions for Real World Problems · STS3205 Advanced Python Programming</div>
+      <ul class="dt-courses-list">
+        <li>CSE1001 — Problem Solving &amp; Programming in Python</li>
+        <li>PHY1999 — Introduction to Innovative Projects</li>
+        <li>ONL1023 — Statistical Data Analysis for Business Research</li>
+        <li>ECE3501 — IoT Fundamentals</li>
+        <li>ECE3502 — IoT Domain Analyst</li>
+        <li>MGT1022 — Lean Start-up Management</li>
+        <li>STS3401 — Foundation to Programming Skills</li>
+        <li>ECE3999 — Technical Solutions for Real World Problems</li>
+        <li>STS3205 — Advanced Python Programming</li>
+      </ul>
     </div>
 
   </div>
